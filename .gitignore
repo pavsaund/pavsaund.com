@@ -35,3 +35,4 @@ yarn.lock
 wwwroot
 .DS_Store
 
+site/public
