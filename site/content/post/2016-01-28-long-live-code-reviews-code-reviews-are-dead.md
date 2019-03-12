@@ -11,7 +11,7 @@ image: /wp-content/uploads/2016/01/code-close.jpg
 publicize_twitter_user:
 - pavsaund
 tags:
-- '#mobprogramming'
+- mobprogramming
 - agile
 - business value
 - code review
