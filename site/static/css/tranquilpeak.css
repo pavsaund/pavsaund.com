@@ -1,0 +1,7 @@
+.postShorten-thumbnailimg  {
+    max-height: 350px;
+}
+
+.postShorten-thumbnailimg > img  {
+    max-width: 100%;
+}
