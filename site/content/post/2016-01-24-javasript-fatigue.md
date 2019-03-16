@@ -10,6 +10,8 @@ dsq_thread_id:
 guid: https://pavsaund.wordpress.com/?p=850
 id: 850
 image: /wp-content/uploads/2016/01/fatigue.jpg
+coverImage: /wp-content/uploads/2016/01/fatigue.jpg
+coverSize: "partial"
 publicize_twitter_user:
 - pavsaund
 tags:

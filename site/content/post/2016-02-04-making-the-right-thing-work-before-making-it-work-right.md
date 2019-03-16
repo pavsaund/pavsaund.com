@@ -8,6 +8,8 @@ dsq_thread_id:
 guid: https://pavsaund.wordpress.com/?p=1286
 id: 1286
 image: /wp-content/uploads/2016/02/plane.jpg
+coverImage: /wp-content/uploads/2016/02/plane.jpg
+coverSize: "partial"
 publicize_twitter_user:
 - pavsaund
 tags:

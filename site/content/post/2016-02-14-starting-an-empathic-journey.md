@@ -11,6 +11,8 @@ full_width_featured_image:
 guid: http://pavsaund.com/?p=1685
 id: 1685
 image: /wp-content/uploads/2016/02/stockvault-on-the-same-wavelenght-two-brains-having-an-idea181544-e1455493560837.jpg
+coverImage: /wp-content/uploads/2016/02/stockvault-on-the-same-wavelenght-two-brains-having-an-idea181544-e1455493560837.jpg
+coverSize: "partial"
 tags:
 - craftsmanship
 - empathy

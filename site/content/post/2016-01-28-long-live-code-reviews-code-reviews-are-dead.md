@@ -8,6 +8,8 @@ dsq_thread_id:
 guid: https://pavsaund.wordpress.com/?p=779
 id: 779
 image: /wp-content/uploads/2016/01/code-close.jpg
+coverImage: /wp-content/uploads/2016/01/code-close.jpg
+coverSize: "partial"
 publicize_twitter_user:
 - pavsaund
 tags:

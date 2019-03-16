@@ -8,6 +8,8 @@ dsq_thread_id:
 guid: http://pavsaund.com/?p=1801
 id: 1801
 image: /wp-content/uploads/2017/02/The-Pavlog-Cover-with-text.png
+coverImage: /wp-content/uploads/2017/02/The-Pavlog-Cover-with-text.png
+coverSize: "partial"
 tags:
 - stoicism
 - stoics

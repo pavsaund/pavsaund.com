@@ -10,6 +10,8 @@ dsq_thread_id:
 guid: https://pavsaund.wordpress.com/?p=379
 id: 379
 image: /wp-content/uploads/2016/01/3338852116_e06a7a111f_b.jpg
+coverImage: /wp-content/uploads/2016/01/3338852116_e06a7a111f_b.jpg
+coverSize: "partial"
 publicize_twitter_user:
 - pavsaund
 tags:

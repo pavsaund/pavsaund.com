@@ -9,6 +9,8 @@ dsq_thread_id:
 guid: http://pavsaund.com/?p=1964
 id: 1964
 image: /wp-content/uploads/2017/04/bossfight-free-stock-photos-water-lake-ocean-sea-sunrise-sunset-header-resize.jpg
+coverImage: /wp-content/uploads/2017/04/bossfight-free-stock-photos-water-lake-ocean-sea-sunrise-sunset-header-resize.jpg
+coverSize: "partial"
 tags:
 - optimism
 - stoicism

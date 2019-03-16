@@ -11,6 +11,8 @@ geo_public:
 guid: https://pavsaund.wordpress.com/?p=783
 id: 783
 image: /wp-content/uploads/2016/01/spinning-crazy.jpg
+coverImage: /wp-content/uploads/2016/01/spinning-crazy.jpg
+coverSize: "partial"
 publicize_twitter_user:
 - pavsaund
 tags:

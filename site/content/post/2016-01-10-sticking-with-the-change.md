@@ -11,6 +11,8 @@ geo_public:
 guid: https://pavsaund.wordpress.com/?p=609
 id: 609
 image: /wp-content/uploads/2016/01/nastyhabit.jpg
+coverImage: /wp-content/uploads/2016/01/nastyhabit.jpg
+coverSize: "partial"
 publicize_twitter_user:
 - pavsaund
 tags:

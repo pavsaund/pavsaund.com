@@ -9,6 +9,8 @@ dsq_thread_id:
 guid: http://pavsaund.com/?p=1875
 id: 1875
 image: /wp-content/uploads/2017/04/Rugby-Scrum-Depositphotos_22425103_original-medium.jpg
+coverImage: /wp-content/uploads/2017/04/Rugby-Scrum-Depositphotos_22425103_original-medium.jpg
+coverSize: "partial"
 title: Strategy &#038; Execution
 url: /2017/04/03/strategy-execution/
 ---
