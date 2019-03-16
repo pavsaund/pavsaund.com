@@ -16,7 +16,7 @@ tags:
 - dolittle
 - job
 - life
-title: Transitions pt.2 &#8211; a new beginning
+title: Transitions pt.2 - a new beginning
 url: /2012/11/05/transitions-pt-2-a-new-beginning/
 ---
 

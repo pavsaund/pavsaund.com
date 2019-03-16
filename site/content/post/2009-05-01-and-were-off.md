@@ -10,7 +10,7 @@ id: 8
 tags:
 - clueless
 - general
-title: '&#8230;and we&#8217;re off!'
+title: And we're off!
 url: /2009/05/01/and-were-off/
 ---
 

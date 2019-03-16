@@ -12,7 +12,7 @@ tags:
 - microsoft
 - pdc
 - streaming
-title: Microsoft PDC &#8217;09 Videos
+title: Microsoft PDC 09 Videos
 url: /2009/11/28/microsoft-pdc-09-videos/
 ---
 

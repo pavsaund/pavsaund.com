@@ -13,7 +13,7 @@ tags:
 - html5
 - ie9
 - wp7
-title: msdnlive oslo; Computer Jedi!
+title: msdnlive oslo - Computer Jedi!
 url: /2010/10/22/msdnlive-oslo-computer-jedi/
 ---
 

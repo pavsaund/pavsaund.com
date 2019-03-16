@@ -11,7 +11,7 @@ tags:
 - cqrs
 - javascript
 - knockoutjs
-title: Bifrost &#8211; A little background
+title: Bifrost - A little background
 twitter_cards_summary_img_size:
 - ""
 url: /2012/01/22/bifrost-a-little-background/

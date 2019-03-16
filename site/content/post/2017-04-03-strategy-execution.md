@@ -11,7 +11,7 @@ id: 1875
 image: /wp-content/uploads/2017/04/Rugby-Scrum-Depositphotos_22425103_original-medium.jpg
 coverImage: /wp-content/uploads/2017/04/Rugby-Scrum-Depositphotos_22425103_original-medium.jpg
 coverSize: "partial"
-title: Strategy &#038; Execution
+title: Strategy & Execution
 url: /2017/04/03/strategy-execution/
 ---
 
@@ -52,7 +52,7 @@ It's that bigger picture that will allow you to execute on a day-to-day basis.
 So, what about you? Are you spinning in place &amp; firing in all directions or are you failing on executing in your direction?
 
 The good news is all i not lost. Strategy can be adjusted. Skills can be learned. And if the skills just aren't there, then adjust your strategy!
-<h2><img class="alignnone size-full wp-image-1961" src="/wp-content/uploads/2017/04/Rugby-man-tieing-lacesDepositphotos_72799871_original-small.jpg" alt="Rugby-man-tieing-lacesDepositphotos_72799871_original-small.jpg" width="1113" height="854" /></h2>
+<h2><img class="alignnone size-full wp-image-1961" src="/wp-content/uploads/2017/04/Rugby-man-tieing-lacesDepositphotos_72799871_original-small.jpg" alt="Rugby-man-tieing-lacesDepositphotos_72799871_original-small.jpg" /></h2>
 <h2>What about me?</h2>
 I've been in the camp of not having a strategy. It was intentional, since part of the plan was to try many things and see what stuck. Then came the important aspect: <strong>Take a step back, reflect and strategize</strong>.
 

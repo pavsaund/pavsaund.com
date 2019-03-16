@@ -16,7 +16,7 @@ tags:
 - video
 - vlog
 - youtube
-title: The PAVLOG &#8211; a Stoic Vlogging Experiment
+title: The PAVLOG - a Stoic Vlogging Experiment
 url: /2017/02/12/pavlog-stoic-vlogging-experiment/
 ---
 

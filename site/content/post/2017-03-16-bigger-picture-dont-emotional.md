@@ -7,7 +7,7 @@ dsq_thread_id:
 - "5638724764"
 guid: http://pavsaund.com/?p=1893
 id: 1893
-title: The Bigger Picture &#8211; Don&#8217;t be so emotional!
+title: The Bigger Picture - Don't be so emotional!
 url: /2017/03/16/bigger-picture-dont-emotional/
 ---
 
