@@ -20,5 +20,6 @@ collections:
       - {label: "Old Image", name: "image", widget: "image", required: false}
       - {label: "Featured Image", name: "coverImage", widget: "image", required: false}
       - {label: "Featured Image Size", name: "coverSize", widget: "select", options: ['partial', 'full'], default: 'partial', required: false}  
+      - {label: "Thumbnail Image Position", name: "thumbnailImagePosition", widget: "select", options: ['left', 'bottom', 'right', 'top'], default: '', required: false}  
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
