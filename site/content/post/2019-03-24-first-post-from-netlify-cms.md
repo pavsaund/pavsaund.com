@@ -3,7 +3,7 @@ layout: blog
 title: First post  from Netlify CMS
 date: 2019-03-23T23:12:30.107Z
 image: ''
-coverImage: ''
+coverImage: /wp-content/uploads/logo.png
 coverSize: partial
 tags:
   - netlify
