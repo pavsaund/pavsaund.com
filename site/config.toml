@@ -161,8 +161,11 @@ theme = "hugo-tranquilpeak-theme"
 
   # Custom JS. Put here your custom JS files. They are loaded after the theme JS;
   # they have to be referred from static root. Example
-  # [[params.customJS]]
-  #   src = "js/myscript.js"
+  [[params.customJS]]
+    src = "https://identity.netlify.com/v1/netlify-identity-widget.js"
+
+  [[params.customJS]]
+    src = "js/netlify-identity.js"
 
   # Sharing options
   # Comment and uncomment to enable or disable sharing options
