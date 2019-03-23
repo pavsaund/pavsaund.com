@@ -17,8 +17,8 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Old Image", name: "image", widget: "image"}
-      - {label: "Featured Image", name: "coverImage", widget: "image"}
-      - {label: "Featured Image Size", name: "coverSize", widget: "select", options: ['partial', 'full'], default: 'partial'}  
-      - {label: "Tags", name: "tags", widget: "list"}  
+      - {label: "Old Image", name: "image", widget: "image", required: false}
+      - {label: "Featured Image", name: "coverImage", widget: "image", required: false}
+      - {label: "Featured Image Size", name: "coverSize", widget: "select", options: ['partial', 'full'], default: 'partial', required: false}  
+      - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
