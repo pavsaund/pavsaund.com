@@ -5,6 +5,7 @@ date: 2019-03-23T23:12:30.107Z
 image: ''
 coverImage: /wp-content/uploads/logo.png
 coverSize: partial
+thumbnailImagePosition: left
 tags:
   - netlify
   - netlify-cms
