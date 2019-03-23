@@ -17,6 +17,8 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
+      - {label: "Old Image", name: "image", widget: "image"}
+      - {label: "Featured Image", name: "coverImage", widget: "image"}
+      - {label: "Featured Image Size", name: "coverSize", widget: "select", options: ['partial', 'full'], default: 'partial'}  
+      - {label: "Tags", name: "tags", widget: "list"}  
       - {label: "Body", name: "body", widget: "markdown"}
