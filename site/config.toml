@@ -3,7 +3,8 @@ disablePathToLower = true
 languageCode = "en-us"
 title = "pavsaund.com"
 theme = "hugo-tranquilpeak-theme"
-# googleAnalytics = "UA-123-45"
+googleAnalytics = ""
+disqusShortname = ""
 
 [author]
   name = "Pavneet Singh Saund"
