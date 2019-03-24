@@ -7,6 +7,8 @@ publish_mode: editorial_workflow
 media_folder: "site/static/wp-content/uploads" # Media files will be stored in the repo under images/uploads
 public_folder: "/wp-content/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
+# site_url: https://beta.pavsaund.com # https://www.netlifycms.org/docs/configuration-options/#publish-mode
+
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
