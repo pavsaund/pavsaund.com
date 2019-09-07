@@ -8,7 +8,7 @@ disqusShortname = ""
 
 [author]
   name = "Pavneet Singh Saund"
-  bio = "Super bio with markdown support **COOL**"
+  bio = "👋 I'm Pav. A father, husband and web developer. I'm care about user experiences, finding better ways of working, and running as long as possible."
   job = "Web Developer / User Experience Lead"
   location = "Norway"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
