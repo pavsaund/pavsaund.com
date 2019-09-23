@@ -3,8 +3,7 @@ author: pavsaund
 categories:
 - Pavlog
 date: "2017-03-16T22:45:10Z"
-dsq_thread_id:
-- "5638724764"
+disqusIdentifier: "5638724764"
 guid: http://pavsaund.com/?p=1893
 id: 1893
 title: The Bigger Picture - Don't be so emotional!

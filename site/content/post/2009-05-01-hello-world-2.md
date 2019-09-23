@@ -3,8 +3,7 @@ author: pavsaund
 categories:
 - Ramblings
 date: "2009-05-01T19:00:43Z"
-dsq_thread_id:
-- "4560849320"
+disqusIdentifier: "4560849320"
 guid: http://pavsaund.com/2009/05/01/hello-world-2/
 id: 6
 title: Hello world!

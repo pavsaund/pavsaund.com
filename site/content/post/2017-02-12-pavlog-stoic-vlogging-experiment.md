@@ -3,8 +3,7 @@ author: pavsaund
 categories:
 - Pavlog
 date: "2017-02-12T22:37:42Z"
-dsq_thread_id:
-- "5546499602"
+disqusIdentifier: "5546499602"
 guid: http://pavsaund.com/?p=1801
 id: 1801
 image: /wp-content/uploads/2017/02/The-Pavlog-Cover-with-text.png

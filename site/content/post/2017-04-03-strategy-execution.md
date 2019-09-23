@@ -4,8 +4,7 @@ categories:
 - DevDiary
 - Me
 date: "2017-04-03T22:02:38Z"
-dsq_thread_id:
-- "5693135724"
+disqusIdentifier: "5693135724"
 guid: http://pavsaund.com/?p=1875
 id: 1875
 image: /wp-content/uploads/2017/04/Rugby-Scrum-Depositphotos_22425103_original-medium.jpg

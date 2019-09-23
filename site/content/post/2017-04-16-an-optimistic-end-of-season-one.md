@@ -4,8 +4,7 @@ categories:
 - Pavlog
 - Uncategorized
 date: "2017-04-16T22:36:51Z"
-dsq_thread_id:
-- "5731950994"
+disqusIdentifier: "5731950994"
 guid: http://pavsaund.com/?p=1964
 id: 1964
 image: /wp-content/uploads/2017/04/bossfight-free-stock-photos-water-lake-ocean-sea-sunrise-sunset-header-resize.jpg

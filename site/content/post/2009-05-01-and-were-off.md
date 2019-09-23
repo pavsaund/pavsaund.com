@@ -3,8 +3,7 @@ author: pavsaund
 categories:
 - Ramblings
 date: "2009-05-01T22:26:56Z"
-dsq_thread_id:
-- "4659876793"
+disqusIdentifier: "4659876793"
 guid: http://pavsaund.wordpress.com/?p=3
 id: 8
 tags:

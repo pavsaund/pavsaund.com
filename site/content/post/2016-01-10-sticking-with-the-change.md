@@ -4,8 +4,7 @@ categories:
 - Me
 - Productivity
 date: "2016-01-10T22:00:37Z"
-dsq_thread_id:
-- "4560849336"
+disqusIdentifier: "4560849336"
 geo_public:
 - "0"
 guid: https://pavsaund.wordpress.com/?p=609

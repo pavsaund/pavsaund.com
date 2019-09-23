@@ -3,8 +3,7 @@ author: pavsaund
 categories:
 - Updates
 date: "2016-03-22T08:00:12Z"
-dsq_thread_id:
-- "4701305802"
+disqusIdentifier: "4701305802"
 format: link
 guid: http://pavsaund.com/?p=1785
 id: 1785

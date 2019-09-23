@@ -4,8 +4,7 @@ categories:
 - craftsmanship
 - Uncategorized
 date: "2016-02-23T08:30:02Z"
-dsq_thread_id:
-- "4604310338"
+disqusIdentifier: "4604310338"
 format: link
 guid: http://pavsaund.com/?p=1694
 id: 1694

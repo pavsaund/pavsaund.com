@@ -3,8 +3,7 @@ author: pavsaund
 categories:
 - Development
 date: "2016-01-28T22:42:52Z"
-dsq_thread_id:
-- "4560843844"
+disqusIdentifier: "4560843844"
 guid: https://pavsaund.wordpress.com/?p=779
 id: 779
 image: /wp-content/uploads/2016/01/code-close.jpg

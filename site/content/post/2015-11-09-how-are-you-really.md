@@ -9,8 +9,7 @@ draft_feedback:
   der har du ha et fint verktøy å bruke i tiden fremover. Stolt av deg!";}}}
 draftfeedback_requests:
 - a:1:{s:21:"hanne.saund@gmail.com";a:3:{s:3:"key";s:13:"5640f924d1ace";s:4:"time";s:10:"1447098660";s:7:"user_id";s:7:"7638579";}}
-dsq_thread_id:
-- "4560846596"
+disqusIdentifier: "4560846596"
 geo_address:
 - Larvik, Norway
 geo_latitude:

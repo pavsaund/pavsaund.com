@@ -5,8 +5,7 @@ categories:
 - Productivity
 - Ramblings
 date: "2016-01-03T01:02:58Z"
-dsq_thread_id:
-- "4560849334"
+disqusIdentifier: "4560849334"
 guid: https://pavsaund.wordpress.com/?p=379
 id: 379
 image: /wp-content/uploads/2016/01/3338852116_e06a7a111f_b.jpg

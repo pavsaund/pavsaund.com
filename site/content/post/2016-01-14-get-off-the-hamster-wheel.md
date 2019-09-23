@@ -4,8 +4,7 @@ categories:
 - Productivity
 - Ramblings
 date: "2016-01-14T22:26:44Z"
-dsq_thread_id:
-- "4560844290"
+disqusIdentifier: "4560844290"
 geo_public:
 - "0"
 guid: https://pavsaund.wordpress.com/?p=783

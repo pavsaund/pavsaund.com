@@ -3,8 +3,7 @@ author: pavsaund
 categories:
 - Development
 date: "2016-02-04T00:29:09Z"
-dsq_thread_id:
-- "4559184586"
+disqusIdentifier: "4559184586"
 guid: https://pavsaund.wordpress.com/?p=1286
 id: 1286
 image: /wp-content/uploads/2016/02/plane.jpg

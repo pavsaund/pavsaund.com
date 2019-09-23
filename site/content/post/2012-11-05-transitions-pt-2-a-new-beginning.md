@@ -3,8 +3,7 @@ author: pavsaund
 categories:
 - Me
 date: "2012-11-05T22:00:18Z"
-dsq_thread_id:
-- "5850699319"
+disqusIdentifier: "5850699319"
 guid: http://pavsaund.wordpress.com/?p=275
 id: 275
 publicize_reach:

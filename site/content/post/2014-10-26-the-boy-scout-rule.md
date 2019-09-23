@@ -3,8 +3,7 @@ author: pavsaund
 categories:
 - Development
 date: "2014-10-26T18:00:21Z"
-dsq_thread_id:
-- "4560849326"
+disqusIdentifier: "4560849326"
 geo_public:
 - "0"
 guid: http://pavsaund.wordpress.com/?p=287
