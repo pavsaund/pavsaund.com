@@ -3,7 +3,7 @@ disablePathToLower = true
 languageCode = "en-us"
 title = "pavsaund.com"
 theme = "hugo-tranquilpeak-theme"
-googleAnalytics = ""
+googleAnalytics = "UA-91857405"
 disqusShortname = ""
 
 [author]
