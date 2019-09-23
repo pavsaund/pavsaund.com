@@ -1,4 +1,4 @@
-baseURL = "https://beta.pavsaund.com"
+baseURL = "https://www.pavsaund.com"
 disablePathToLower = true
 languageCode = "en-us"
 title = "pavsaund.com"
@@ -99,7 +99,7 @@ disqusShortname = ""
   # If false it will flat categories.
   hierarchicalCategories = true
 
-  description = "Hugo tranquilpeak theme demo"
+  description = "Pavneet Singh Saund's Notes"
 
   # Customization
   # Define the behavior of the sidebar
