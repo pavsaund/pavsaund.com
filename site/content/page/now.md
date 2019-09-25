@@ -1,11 +1,17 @@
 ---
 title: "Now"
-# thumbnailImagePosition: left
-# thumbnailImage: //d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city-750.jpg
-# coverImage: //d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city.jpg
-# metaAlignment: center
-# coverMeta: out
-date: 2019-10-23
+date: 2019-09-25T22:45:28+02:00
+# categories:
+# - category
+# - subcategory
+# tags:
+# - tag1
+# - tag2
+# keywords:
+# - tech
+comments:       true
+showMeta:       false
+showActions:    false
+url: /now
+#thumbnailImage: //example.com/image.jpg
 ---
-
-This is a Now Page
