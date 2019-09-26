@@ -1,6 +1,7 @@
 ---
 title: "Now"
 date: 2019-09-25T22:45:28+02:00
+summary: "A snapshot on what I'm up to right now. Updated every once in a while"
 # categories:
 # - category
 # - subcategory
