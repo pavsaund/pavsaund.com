@@ -19,7 +19,7 @@ url: /now
 
 Still living a good life in Tjodalyng, Norway with the family. The kids are really growing fast, 4, 10 & 11. It's a joy to see their growth. We just got a cat, Stitch, who's really fitting in well.
 
-Work at Dolittle is exciting. It's a unique challenge to build a company for the long haul with such a wonderful group of people. 
+Work at [Dolittle](https://www.dolittle.com) is exciting. It's a unique challenge to build a company for the long haul with such a wonderful group of people. 
 
 Really excited about AureliaJS these days, and considering to have that as a way to get back into blogging, and perhaps presenting?
 
