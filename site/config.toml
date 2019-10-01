@@ -2,6 +2,7 @@ baseURL = "https://www.pavsaund.com"
 disablePathToLower = true
 languageCode = "en-us"
 title = "pavsaund.com"
+defaultContentLanguage = "en-us"
 theme = "hugo-tranquilpeak-theme"
 googleAnalytics = ""
 disqusShortname = "pavsaund"
