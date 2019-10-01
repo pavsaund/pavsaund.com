@@ -40,6 +40,6 @@ The interesting aspect here is that he explains how the patterns of other framew
 
 Rob ends the piece by encouraging people to keep up to date on trends & techniques, but not to forget the years of learnings that have gone into existing techniques that work.
 
-I also think it's important to recognize that there are different kinds of applications where features from React or Vue make more sense to use. Either because of the features those languages have, or because of the community support they have with plugins, libraries and helpers.
+I also think it's important to recognize that there are different kinds of applications where features from React or Vue make more sense to use. Either because of the features those frameworks/libraries have, or because of the community support they have with plugins, libraries and helpers.
 
 _<small>Originally posted on the [Dolittle Community Forum](https://community.dolittle.com/t/does-aurelia-support-react-hooks/33?u=pavneet)</small>_
