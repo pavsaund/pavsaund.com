@@ -1,9 +1,7 @@
 ---
 author: pavsaund
 categories:
-- Development
-- Productivity
-- Ramblings
+- DevDiary
 date: "2016-01-24T23:00:39Z"
 disqusIdentifier: "4560844061"
 guid: https://pavsaund.wordpress.com/?p=850

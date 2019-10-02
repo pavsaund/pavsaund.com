@@ -1,8 +1,7 @@
 ---
 author: pavsaund
 categories:
-- Me
-- Productivity
+- DevDiary
 date: "2016-01-10T22:00:37Z"
 disqusIdentifier: "4560849336"
 geo_public:

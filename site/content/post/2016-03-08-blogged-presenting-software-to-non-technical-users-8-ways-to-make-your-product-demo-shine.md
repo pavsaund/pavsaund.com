@@ -1,7 +1,7 @@
 ---
 author: pavsaund
 categories:
-- Updates
+- DevDiary
 date: "2016-03-08T08:00:34Z"
 format: link
 guid: http://pavsaund.com/?p=1776

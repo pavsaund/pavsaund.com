@@ -1,7 +1,7 @@
 ---
 author: pavsaund
 categories:
-- Development
+- DevDiary
 date: "2014-10-26T18:00:21Z"
 disqusIdentifier: "4560849326"
 geo_public:

@@ -2,7 +2,6 @@
 author: pavsaund
 categories:
 - Pavlog
-- Uncategorized
 date: "2017-04-16T22:36:51Z"
 disqusIdentifier: "5731950994"
 guid: http://pavsaund.com/?p=1964

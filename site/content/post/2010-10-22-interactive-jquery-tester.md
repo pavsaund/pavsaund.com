@@ -1,7 +1,7 @@
 ---
 author: pavsaund
 categories:
-- Tools
+- DevDiary
 date: "2010-10-22T23:12:55Z"
 guid: http://pavsaund.wordpress.com/?p=119
 id: 119

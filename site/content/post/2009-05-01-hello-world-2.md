@@ -1,7 +1,7 @@
 ---
 author: pavsaund
 categories:
-- Ramblings
+- DevDiary
 date: "2009-05-01T19:00:43Z"
 disqusIdentifier: "4560849320"
 guid: http://pavsaund.com/2009/05/01/hello-world-2/

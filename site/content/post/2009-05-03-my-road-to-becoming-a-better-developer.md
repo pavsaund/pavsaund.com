@@ -1,7 +1,7 @@
 ---
 author: pavsaund
 categories:
-- Me
+- DevDiary
 date: "2009-05-03T13:14:02Z"
 disqusIdentifier: "4560849324"
 guid: http://pavsaund.wordpress.com/?p=9

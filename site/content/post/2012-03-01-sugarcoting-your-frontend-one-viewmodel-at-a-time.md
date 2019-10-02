@@ -1,7 +1,6 @@
 ---
 author: pavsaund
 categories:
-- Development
 - Talks
 date: "2012-03-01T20:09:40Z"
 format: aside

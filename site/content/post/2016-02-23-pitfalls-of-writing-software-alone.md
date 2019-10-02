@@ -1,8 +1,7 @@
 ---
 author: pavsaund
 categories:
-- craftsmanship
-- Uncategorized
+- DevDiary
 date: "2016-02-23T08:30:02Z"
 disqusIdentifier: "4604310338"
 format: link

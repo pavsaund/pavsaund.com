@@ -1,7 +1,7 @@
 ---
 author: pavsaund
 categories:
-- Me
+- DevDiary
 date: "2015-11-09T21:13:05Z"
 draft_feedback:
 - a:1:{s:21:"hanne.saund@gmail.com";a:1:{i:0;a:2:{s:4:"time";s:10:"1447099323";s:7:"content";s:168:"Ærlig

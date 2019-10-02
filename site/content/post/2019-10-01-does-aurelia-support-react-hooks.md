@@ -7,6 +7,8 @@ tags:
   - react
   - vue
   - frontend
+categories:
+- DevDiary
 ---
 There was recently a post on the Aurelia Discourse that caught my attention asking how react-like hooks would work when using Aureliajs. The [response from Aurelia's creator](https://discourse.aurelia.io/t/how-we-react-hooks/2955/2?u=pavsaund) underlined some of the reasons why I trust Aurelia to build JavaScript applications with Aurelia.
 

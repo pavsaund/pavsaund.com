@@ -1,7 +1,7 @@
 ---
 author: pavsaund
 categories:
-- Updates
+- DevDiary
 date: "2016-03-29T09:00:46Z"
 disqusIdentifier: "4702475781"
 format: link

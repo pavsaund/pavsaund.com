@@ -1,7 +1,7 @@
 ---
 author: pavsaund
 categories:
-- Development
+- Community
 date: "2012-02-17T22:53:38Z"
 excerpt: |
   <p><a href="http://nnug.no/Avdelinger/Vestfold/Moter/NNUG-Vestfold---22-Februar-2012/" title="NNUG Vestfold Meetup 29. Feburary">NNUG Vestfold Meetup 29. Feburary</a></p>

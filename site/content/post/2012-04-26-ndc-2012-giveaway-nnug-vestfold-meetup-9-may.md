@@ -1,8 +1,7 @@
 ---
 author: pavsaund
 categories:
-- Development
-- Talks
+- Community
 date: "2012-04-26T23:25:35Z"
 guid: http://pavsaund.wordpress.com/?p=242
 id: 242

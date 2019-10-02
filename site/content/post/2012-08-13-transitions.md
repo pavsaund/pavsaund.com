@@ -1,7 +1,7 @@
 ---
 author: pavsaund
 categories:
-- Me
+- DevDiary
 date: "2012-08-13T05:00:59Z"
 guid: https://pavsaund.wordpress.com/?p=273
 id: 273
