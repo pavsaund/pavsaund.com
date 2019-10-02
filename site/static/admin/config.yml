@@ -53,4 +53,18 @@ collections:
                 required: false,
             }
           - { label: "Tags", name: "tags", widget: "list" }
+          - {
+                label: "Categories",
+                name: "categories",
+                widget: "select",
+                options:
+                    [
+                        "DevDiary",
+                        "Uncategorized",
+                        "Community",
+                        "Talks",
+                        "Pavlog",
+                    ],
+            }
+
           - { label: "Body", name: "body", widget: "markdown" }
