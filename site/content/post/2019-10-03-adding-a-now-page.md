@@ -1,7 +1,7 @@
 ---
 layout: blog
 draft: false
-title: My /now page
+title: Adding a /now page
 date: 2019-10-03T18:50:37.147Z
 coverSize: partial
 thumbnailImagePosition: ''
