@@ -7,7 +7,8 @@ coverSize: partial
 thumbnailImagePosition: ''
 tags:
   - now
-categories: DevDiary
+categories: 
+  - DevDiary
 ---
 TL;DR: I've written and published a [/now page](/now). 
 
