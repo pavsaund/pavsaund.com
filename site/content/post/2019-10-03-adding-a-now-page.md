@@ -1,6 +1,6 @@
 ---
 layout: blog
-draft: true
+draft: false
 title: Adding a /now page
 date: 2019-10-03T18:50:37.147Z
 coverSize: partial
