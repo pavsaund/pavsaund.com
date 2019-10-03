@@ -13,6 +13,7 @@ categories:
 TL;DR: I've written and published a [/now page](/now). 
 
 For more of the back story and understanding what it is, read on.
+<!--more-->
 
 I can't remember when I first stumbled over Derek Sivers. It could have been one of his posts on [giving away all his money](https://sivers.org/trust), or perhaps his [TED talk](https://www.ted.com/talks/derek_sivers_how_to_start_a_movement) on [leadership lessons from a dancing guy](https://sivers.org/ff). Regardless, at one point in time I remember reading about [the concept of a now page](https://sivers.org/nowff). I found it intriguing, but never really got around to it.
 
