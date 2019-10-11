@@ -1,35 +1,28 @@
 ---
-title: "Should I enable Auto Save in VSCode?"
-date: 2019-10-11T08:51:57+02:00
 draft: false
-categories:
-- DevDiary
+title: Should I enable Auto Save in VSCode?
+date: 2019-10-11T06:51:57.000Z
 tags:
-- vscode
-- auto-save
-- feedback-loops
-- growth
-- tools
-- workflow
-- productivity
-keywords:
-- tech
-summary: I've decided to experiment with the auto save feature on, but first I wanted to dissect WHY I'm so skeptical of it, and what I could potentially gain. Here's a brain dump.
-
-#thumbnailImage: //example.com/image.jpg
+  - vscode
+  - auto-save
+  - feedback-loops
+  - growth
+  - tools
+  - workflow
+  - productivity
+categories:
+  - DevDiary
 ---
-
 I worked on another developer's machine yesterday and they were using the auto-save feature in their editor. This threw me off completely, and had me questioning a fundamental truth I've had of needing to save files while developing software. 😱
 
 {{< tweet 1182543783327649792 >}}
 
-I've decided to experiment with the auto save feature on, but first I wanted to dissect WHY I'm so skeptical, and what I could potentially gain. 
-
-Here's a brain-dump.
+I've decided to experiment with the auto save feature on, but first I wanted to dissect WHY I'm so skeptical, and what I could potentially gain. Here's a brain-dump.
 
 <!--more-->
 
 ## Why am I skeptical of auto save while coding? 🤨
+
 ### More Load
 
 * I tend to have automation running in the background (ie: build watchers for javascript and dotnet, as well as continuous testing tools)
@@ -38,13 +31,14 @@ Here's a brain-dump.
 
 ### Less Flexibility
 
-  * I tend to leave things in a mess when refactoring sometimes, and I wonder if that will lead to more noise vs signal?
-  * more distracted by things failing
-  * I want to be explicit about when I'm ready to "commit" a change to disk with the save-feature.
-  * I tend to have WIP as unsaved files as a very convenient feature
-  * Sometimes I do changes before committing the previous ones - it's good then to be able to go bac, commit the saved changes, then save the new changes (more control)
+* I tend to leave things in a mess when refactoring sometimes, and I wonder if that will lead to more noise vs signal?
+* more distracted by things failing
+* I want to be explicit about when I'm ready to "commit" a change to disk with the save-feature.
+* I tend to have WIP as unsaved files as a very convenient feature
+* Sometimes I do changes before committing the previous ones - it's good then to be able to go bac, commit the saved changes, then save the new changes (more control)
 
-### Personal Resistance 
+### Personal Resistance
+
 * Old habits die hard
 * Introducing a new source of friction (by removing friction) 🤷🏾‍♂️
 
