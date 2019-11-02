@@ -1,6 +1,6 @@
 ---
 layout: blog
-draft: true
+draft: false
 title: Highlights from the Aurelia vNext 2019 fall update
 date: 2019-11-02T20:37:42.809Z
 coverSize: partial
