@@ -18,11 +18,11 @@ categories:
 
 <!--more-->
 
-These are some highlights of what I found pretty cool:
+These are some highlights of what I found pretty cool in the latest update:
 
 * Official name: **Aurelia 2**
 * [VSCode integration](https://github.com/aurelia/vscode-extension/pull/104) with direct linking between bindables, observables, views, and custom attributes to their backing code representation
-* VanillaJS-like performance with JIT (Just in time) optimisations, and a new AOT (Ahead of Time) optimisations 
+* VanillaJS-like performance with JIT (Just in time) optimisations, and new AOT (Ahead of Time) optimisations 
 * [Extensibility](https://aurelia.io/blog/2019/10/31/aurelia-vnext-2019-fall-update/#extensibility) that allows you to emulate the syntax of other frameworks, like Angular / Vue etc
 * A continuous focus on [Web Standards](https://aurelia.io/blog/2019/10/31/aurelia-vnext-2019-fall-update/#web-standards)
 * Developer Experience has received som pretty considerable features, here are the ones I'm excited about
