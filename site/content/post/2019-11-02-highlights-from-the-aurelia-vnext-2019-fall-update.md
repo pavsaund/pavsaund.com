@@ -6,7 +6,7 @@ date: 2019-11-02T20:37:42.809Z
 coverSize: partial
 thumbnailImagePosition: ''
 tags:
-  - aurelia
+  - aureliajs
   - frontend
   - development
   - javascript
