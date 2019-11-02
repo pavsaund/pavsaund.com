@@ -16,6 +16,8 @@ categories:
 ---
 [There was a recent blog post with the status of Aurelia vNext](https://aurelia.io/blog/2019/10/31/aurelia-vnext-2019-fall-update/). For those of you that don't know, Aurelia is a frontend framework with a focus on standards, extensibility, ease of use and performance. It's been a while since a new major release, so vNext is a pretty big deal.
 
+<!--more-->
+
 These are some highlights of what I found pretty cool:
 
 * Official name: **Aurelia 2**
