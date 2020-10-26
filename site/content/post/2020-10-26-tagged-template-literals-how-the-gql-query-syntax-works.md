@@ -1,6 +1,6 @@
 ---
 layout: blog
-draft: true
+draft: false
 title: Tagged template literals - How the gql`query` syntax works
 date: 2020-10-26T21:58:26.789Z
 coverSize: partial
