@@ -32,8 +32,20 @@ She continues to dig into technical debt, and the tendency to do big bang refact
 
 > Architecture as **enabling constraints** - Constraints about how we use data and code that help us move faster over time
 
-### “Source code dependencies must point inwards” => “Easier to isolate impact of changes”
+1. “Source code dependencies must point inwards” => “Easier to isolate impact of changes”
+2. "Be conservative about code reuse" => "Avoid coupling code that diverges over time"
+3. "Enforce your boundaries" => "Preserve architecture over time"
 
-### "Be conservative about code reuse" => "Avoid coupling code that diverges over time"
+## In conclusion
 
-### "Enforce your boundaries" => "Preserver architecture over time"
+**💰The real cost of software is maintenance over time, because change is inevitable.**
+
+**🚘Architecture is about applying enabling constraints to how we use code and data**
+
+**🐿We can make small changes to make our projects more resilient**
+
+* Think directionally
+* Be conservative on reuse
+* Enforce your boundaries
+
+... and in addition - architecture from different languages and areas can be applied to our frontends. Be open to learning and adapting.
