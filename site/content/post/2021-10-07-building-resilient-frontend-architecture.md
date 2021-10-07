@@ -12,7 +12,9 @@ tags:
 categories:
   - DevDiary
 ---
-Notes on the talk on [Building Resilient Frontend Architecture](https://www.youtube.com/watch?v=TqfbAXCCVwE) by Monica Lent.
+Notes on the talk on [Building Resilient Frontend Architecture](https://www.youtube.com/watch?v=TqfbAXCCVwE) by Monica Lent.\
+\
+{{< youtube w7Ft2ymGmfc >}}
 
 In this wonderful talk, Monica cuts to the heart of core aspects of rewriting code and presents 3 strategies to increase the resiliency of frontend architecture.
 
