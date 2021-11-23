@@ -1,7 +1,6 @@
 ---
 title: "Now"
-date: 2019-10-03T18:15:28+02:00
-lastmod: 2021-11-23T23:25:00+02:00
+date: 2021-11-23T23:25:00+02:00
 summary: "A snapshot on what I'm up to right now. Updated every once in a while"
 # categories:
 # - category
