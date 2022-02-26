@@ -4,9 +4,9 @@ draft: false
 title: Build dynamic breadcrumb routes and child routes with mathPath in React
   Router v6
 date: 2022-02-26T23:22:36.336Z
-coverImage: /wp-content/uploads/engin-akyurt-wxuninqmgy4-unsplash-resize.jpg
+coverImage: ""
 coverSize: partial
-thumbnailImagePosition: ""
+thumbnailImagePosition: null
 tags:
   - frontend
   - react
