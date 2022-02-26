@@ -14,7 +14,7 @@ categories:
   - DevDiary
 ---
 
-When faced with a challenge of implementing breadcrumbs for a business critical application recently I went down a rabbit hole of trying to understand the semantics of react-router and finding a good way of building a dynamic breadcrumb component that didn't break every time a route was added or changed. Let alone need to implement a custom route for every new page. So let's dig in!
+When faced with a challenge of implementing breadcrumbs for a business critical application recently I went down a rabbit hole of trying to understand the semantics of react-router and finding a good way of building a dynamic breadcrumb component that didn't break every time a route was added or changed. Let alone need to implement a custom route for every new page. In this post I go into what I ended up with as a routing model that supports dynamic breadcrumbs
 
 ## The requirements
 - Maintain a single routing model (or composition of models) as the source of truth for the app
@@ -29,56 +29,61 @@ You can check out this github repository to see my trail and error: https://gith
 
 You can view the code in action on stackblitz: https://stackblitz.com/github/pavsaund/react-routing-model/
 
-You can jump over my learnings and use the use-react-router-breadcrumbs package from [XXX]: https://www.npmjs.com/package/use-react-router-breadcrumbs
-
 ## Digging into details
 
-It took me a while to really grok the routing model with nested routs in react router v6. I put this down to coming from very basic use of v5 and mostly using other frameworks. I found this article on nested routes most useful https://ui.dev/react-router-nested-routes. Based on this I realized I wanted to define my routes as a single model, where possible and to use the `<Outlet />` component to render the routes for a given path. [More info on the usage of `<Outlet />`](https://reactrouter.com/docs/en/v6/getting-started/concepts#outlets).
+It took me a while to really grok the routing model with nested routs in React Router v6. I put this down to coming from very basic use of v5 and mostly using other frameworks. I found this article on nested routes most useful https://ui.dev/react-router-nested-routes. Based on this I realized I wanted to define my routes as a single model, where possible and to use the `<Outlet />` component to render the routes for a given path. [More info on the usage of `<Outlet />`](https://reactrouter.com/docs/en/v6/getting-started/concepts#outlets).
 
-So I started with the model I wanted, which was built separate from React router's. The idea being that a simple model that can easily be parsed and mapped into something react router could understand. I didn't want to implement ALL the features of react router, but just enough for my use case. This worked fine for my proof of concept
-
-Then after experimenting a bit and also understanding more of the route model that react router expected I actually ended up augmenting what it already expected with a few custom properties. This is the end result.
+Let's start with how the routes look like from a React Router perspective, and what you'll likely see in your regular react app.
 
 ```ts
-export type RoutePathDefinition = RouteObject & {
-  title: string;
-  nav?: boolean;
-  children?: RoutePathDefinition[];
-  path: string;
-};
+  <Routes>
+    <Route path="/" element={<Page title="home" />} />
+    <Route path="/away" element={<Page title="away" />} />
+    <Route path="/sub" element={<Page title="sub" withOutlet />}>
+      <Route path="zero" element={<Page title="sub-zero" />} />
+    </Route>
+  </Routes>
+
 ```
-Here is an example of a route with sub route:
+I started with the model I wanted, which was built separate from React Router's. The idea being that a simple model that can easily be parsed and mapped into something React Router could understand. I didn't want to implement ALL the features of React Router, but just enough for my use case. This worked fine for the initial proof of concept. Then after experimenting a bit and also understanding more of the route model that React Router expected I actually ended up augmenting the `RouteObject` model with custom properties. This is the end result.
 
 ```ts
-  {
-    title: "Home", path: "/", element: <Page title="home" />,
-  },
-  {
-    title: "Away", path: "/away", element: <Page title="away" />,
-  },
-  {
-    title: "Sub",
-    path: "/sub",
-    element: <Page title="sub" withOutlet />,
-    children: [
-      {
-        title: "Sub-Zero", path: "zero", element: <Page title="sub-zero" />,
-      },
-    ],
-  }
+  export interface RoutePathDefinition extends RouteObject {
+    title: string;
+    nav?: boolean;
+    children?: RoutePathDefinition[];
+    path: string;
+  };
+
+  const routes: RoutePathDefinition[] = [
+    {
+      title: "Home", path: "/", element: <Page title="home" />,
+    },
+    {
+      title: "Away", path: "/away", element: <Page title="away" />,
+    },
+    {
+      title: "Sub",
+      path: "/sub",
+      element: <Page title="sub" withOutlet />,
+      children: [
+        {
+          title: "Sub-Zero", path: "zero", element: <Page title="sub-zero" />,
+        },
+      ],
+    }
+  ];
 ```
 
 The `<Page />` component is a simple helper component to render a page with a title, and the `withOutlet` prop is an indication to rener an `<Outlet />`for the sub routes to render. [Implementation here.](https://github.com/pavsaund/react-routing-model/blob/7bad0d2a1ebbb2e1bb6ca047746414efab73c2b4/src/Layout/Page.tsx)
 
 ## Building the breadcrumbs
 
-Now, for the fun part - actually understanding how to get the active path from React router. This is where grokking how react router builds its path's was important. I realised after hitting my head on the wall that there is no central place where all the routes are stored that is exposed through public api. ([There is an exposed `UNSAFE_RouteContext` if you want to live on the edge](https://github.com/remix-run/react-router/blob/8601f27e74021c3d0da13cfa036f38c0cd7af9b3/packages/react-router-dom/index.tsx#L119)). But React Router and nested routes seem to work by each level of the router owning it's own routes and the next level to take over. Meaining that a parent route doesn't actually know anything about it's children, and a child only knows its own path pattern based on the resolved parent's route. Simple, elegant. Now to build the breadcrumb
+Now, for the fun part - actually understanding how to get the active path from React Router. This is where grokking how React Router builds its path's was important. I realised after hitting my head on the wall that there is no central place where all the routes are stored that is exposed through public api. ([There is an exposed `UNSAFE_RouteContext` if you want to live on the edge](https://github.com/remix-run/react-router/blob/8601f27e74021c3d0da13cfa036f38c0cd7af9b3/packages/react-router-dom/index.tsx#L119)). My current understanding is that React Router and nested routes seem to work by each level of the router owning it's own routes and the next level to take over. Meaning that a parent route doesn't actually know anything about it's children, and a child only knows its own path pattern based on the resolved parent's route. Now to build the breadcrumb.
 
-### Matching the top level crumb
-Using the [`matchPath` utility](https://reactrouter.com/docs/en/v6/api#matchpath) the react router will match the given location against the path provided. It also returns the resolved pathname, and any params it resolves. By specifying `end = false;` on the `PathPattern` option will allow a partial match on the supplied location. This allows us to know if a given pattern is part of the breadcrumb or not.
+### Matching the top level crumb with `matchPath`
 
-
-> When using the `useMatch()` hook from within a component that is rendered on the child router level, it will automatically do take the parent route into consideration, so `zero` will actually match. This is not the case when iterating manually like this.
+Using the [`matchPath` utility](https://reactrouter.com/docs/en/v6/api#matchpath) the React Router will match the given location against the path provided. It also returns the resolved pathname, and any params it resolves. By specifying `end = false;` on the `PathPattern` option will allow a partial match on the supplied location. This allows us to know if a given pattern is part of the current location, and should be included in the breadcrumb or not.
 
 So, let's resolve the top level paths aginst to our second route `/sub/zero`
 
@@ -130,7 +135,7 @@ const location = useLocation(); //for '/sub/zero'
 matchPath({path: 'zero', end: false, },location.pathname); // returns null
 matchPath({path: '/sub/zero', end: false, },location.pathname); // returns match
 ```
-OK! Now we're getting somewhere. It's not enough to match against the path pattern itself, you also need to match with the parent pathname. So let's add the parent path into the mix, shall we?
+OK! Now we're getting somewhere. It's not enough to match against the path pattern itself, you also need to match with the parent pathname. So let's add the parent path into the mix.
 
 ```ts
 
@@ -180,8 +185,8 @@ const matches = matchRouteDefinitions(routes, '/sub/zero');
 
 ```
 
-So, there's a bit more going on here so let's break down what's happening.
-`parentPath` has been added as a parameter with a default value of `''`. Then using thr `joinPaths` function the parent and definition path are joined, and any redundant `//` are replaced with a single slash.
+There's a bit more going on here so let's break down what's happening.
+`parentPath` has been added as a parameter with a default value of `''`. Then using the `joinPaths` function the parent and definition path are joined, and any redundant `//` are replaced with a single slash.
 
 Next, if there are children on the matched route, then recursively call the `matchRouteDefinitions` with the child routes. This time we pass in the `pathPatternWithParent` as a the parentPath parameter, which then allows the child router paths to match.
 
@@ -252,7 +257,7 @@ So, we can add the `*` pattern to the ignore list as well.
 ```
 
 ### Edge case 3 - Child route with ''-path with redirect matches parent route
-For a use case where a child route has an empty path then the resolved from `matchPath` ends up being the same.
+For a use case where a child route has an empty path then the resolved from `matchPath` ends up being the same. This may actually be what React Router refers to as an [`Index` path](https://reactrouter.com/docs/en/v6/getting-started/concepts#index-route) - but I haven't explored that aspect enough yet.
 
 ```ts
  routes.push({
@@ -331,7 +336,7 @@ function canBeAddedToMatch(matches: PathMatch[], match: PathMatch) {
 ```
 
 ## Rendering routes
-So, now that we have all our route defined in a nice object, wouldn't it be good to render them using that same object? As i mentioned in the introduction, this caused me some pain until I realised I could extend the `RouteObject` that react router already exposes. Then it's possible to use the `useRoutes` hook to do the rendering for you.
+So, now that we have all our route defined in a nice object, wouldn't it be good to render them using that same object? As i mentioned in the introduction, this caused me some pain until I realised I could extend the `RouteObject` that React Router already exposes. Then it's possible to use the `useRoutes` hook to do the rendering for you.
 
 ```ts
 import { routes } from './routes';
@@ -347,7 +352,7 @@ export default function App(){
 }
 ```
 
-Then in the page that has child routes, include the `<Outlet />` component. Remember to do this for each component that has child routes. React router will then figure out which child routes to render there.
+Then in the page that has child routes, include the `<Outlet />` component. Remember to do this for each component that has child routes. React Router will then figure out which child routes to render there.
 
 ```ts
 import { Outlet } from "react-router-dom";
@@ -364,7 +369,7 @@ export default function Sub() {
 ```
 
 ## Rendering the breadcrumbs
-Now that we have all the moving parts in place, we can put it all together in the `Breadcrumbs` component.
+Now that we have all the moving parts in place, we can put it all together in the `Breadcrumbs` component. In the below exampled the `matchRouteDefinitions` function now returns an `ActiveRoutePath` which is a structure that includes both the `match` and the `RoutePathDefinition` for convenience.
 
 ```ts
 export type ActiveRoutePath = {
@@ -375,7 +380,7 @@ export type ActiveRoutePath = {
 
 function useActiveRoutePaths(routes: RoutePathDefinition[]): ActiveRoutePath[] {
   const location = useLocation();
-  const activeRoutePaths = matchRouteDefinitions(routes, location.pathname);
+  const activeRoutePaths: ActiveRoutePath[] = matchRouteDefinitions(routes, location.pathname);
   return activeRoutePaths;
 }
 
@@ -397,7 +402,6 @@ export function Breadcrumbs({ routes }: BreadcrumbsProps) {
   );
 ```
 
-
 Now, in our `App.tsx` we can include th breadcrums path and it will render breadcrumbs automatically based on the page you are visiting.
 
 ```ts
@@ -414,11 +418,10 @@ export default function App(){
 ```
 
 ## Conclusion
-In conclusion, `matchPath` can be used to manually match a path pattern agiainst the current url to get build
+In conclusion, `matchPath` can be used to manually match a path pattern against the current url to build breadcrumbs for the rotues along the path. As a bonus, by extending the `RouteObject` type exposed from React Router 6, you can add capabilities specifc to your applications needs.
 
+There are two requirements I haven't dug into yet in this post. Stay tuned for the follow up posts that will cover these cases:
+- Be able to show dynamic breadcrumb title based on parameters.
+- Bonus: Support generating Navlinks
 
-
-Here are some links to articles that have helped me along the way:
-
-- https://reactrouter.com/docs/en/v6/getting-started/concepts#matching
-insert more links from repo here.
+I hope you enjoyed this post. Let me know if it's been useful to you, or if you have feedback.
