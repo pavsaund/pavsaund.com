@@ -1,7 +1,7 @@
 ---
 layout: blog
 draft: false
-title: Build dynamic breadcrumb routes and child routes with mathPath in React
+title: Build dynamic breadcrumb routes and child routes with matchPath in React
   Router v6
 date: 2022-02-26T23:22:36.336Z
 coverImage: ""
